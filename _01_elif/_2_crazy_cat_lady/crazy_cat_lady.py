@@ -10,6 +10,11 @@ def play_video(url):
 
 
 if __name__ == '__main__':
+    window = Tk()
+    window.withdraw()
+    number = simpledialog.askinteger(title="Cat Question", prompt="How many cats do you have?")
+    if number > 2:
+        messagebox.showinfo(title="Cat Lover!", message="")
     # TODO 1) Make a new window variable, window = Tk()
     #      2) Hide the window using the window's .withdraw() method
     #      3) Ask the user how many cats they have
