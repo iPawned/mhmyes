@@ -14,7 +14,13 @@ if __name__ == '__main__':
     window.withdraw()
     number = simpledialog.askinteger(title="Cat Question", prompt="How many cats do you have?")
     if number > 2:
-        messagebox.showinfo(title="Cat Lover!", message="")
+        messagebox.showinfo(title="Cat Lover!", message="You are a crazy cat lady!")
+    elif number > 0 and number < 3:
+        play_video('https://www.youtube.com/watch?v=L3tsYC5OYhQ')
+    elif number == 0:
+        play_video('https://www.youtube.com/watch?v=sxAlWUSkACs&t=2s')
+    elif number < 0:
+        messagebox.showinfo(title='Whaat!', message='Is that even possible?')
     # TODO 1) Make a new window variable, window = Tk()
     #      2) Hide the window using the window's .withdraw() method
     #      3) Ask the user how many cats they have
