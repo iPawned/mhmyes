@@ -20,6 +20,12 @@ if __name__ == '__main__':
             messagebox.showinfo(title="Pond", message="You see a big pond to refill your water with")
             quest3 = simpledialog.askstring(title="Question 3:", prompt="Type Refill to refill your water or type Ignore to walk past it")
             if quest3 == "Refill":
-                messagebox.showinfo(title="Failed", message="You take a sip of yodur water. Within a few minutes, you start to feel sick, and collapse on the ground.")
+                messagebox.showinfo(title="Failed", message="You take a sip of your water. Within a few minutes, you start to feel sick, and collapse on the ground.")
             elif quest3 == "Ignore":
-                messagebox.showinfo(title="Passed", message="A man walks up to you and asks you if you drank water from the pond. You tell him no, and he sighs with relief and tells you that a large amount of deadly chemicals fell into the water")
+                messagebox.showinfo(title="Passed", message="A man walks up to you and asks you if you drank water from the pond. You tell him no, and he sighs with relief and tells you that a large amount of deadly chemicals fell into the water!")
+                messagebox.showinfo(title="Bandits", message="You see a group of bandits hoping for a easy score.")
+                quest4 = simpledialog.askstring(title="Question 4", prompt="Type Attack to attack the bandits or Run to run away")
+                if quest3 == "Run":
+                    messagebox.showinfo(title="Failed", message="You try running as fast as you can the other way, but get cornered by even more bandits. It was a trap!")
+                elif quest4 == "Fight":
+                    messagebox.showinfo(title="Passed", message="As you start to pull out your weapons, the bandits run away. They must have thought that you were unarmed!")
