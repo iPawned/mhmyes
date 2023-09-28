@@ -25,3 +25,7 @@ if __name__ == '__main__':
     window = Tk()
     window.withdraw()
     many_shiny_objects()
+play_mister_zee()
+number = simpledialog.askinteger(title="Shiny Objects", prompt="How many shiny objects do you want?")
+for i in range: number
+play_mister_zee()
