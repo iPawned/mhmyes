@@ -11,7 +11,7 @@ def play_mister_zee():
         print("Mister Zee requires shiny objects")
 
 
-def many_shiny_objects():
+    def many_shiny_objects():
     # TODO 1) Call the method above to play Mister Zee
     play_mister_zee()
     # TODO 2) Ask the user how many shiny objects they want
